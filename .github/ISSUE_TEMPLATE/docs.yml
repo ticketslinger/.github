@@ -1,0 +1,17 @@
+name: Docs problem
+description: Something in the docs is wrong, missing, or confusing
+labels: ["documentation", "needs triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      placeholder: URL or file path
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+    validations:
+      required: true

@@ -1,0 +1,40 @@
+name: Bug report
+description: Something isn't working the way it should
+labels: ["bug", "needs triage"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or a commit SHA
+  - type: dropdown
+    id: hosting
+    attributes:
+      label: Where is it running?
+      options:
+        - Self-hosted
+        - TicketSlinger cloud
+        - Local development
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste any relevant log output. Remove secrets first.
+      render: shell
