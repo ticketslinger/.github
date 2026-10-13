@@ -30,7 +30,6 @@ body:
       label: Where is it running?
       options:
         - Self-hosted
-        - TicketSlinger cloud
         - Local development
   - type: textarea
     id: logs
